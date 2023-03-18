@@ -1,4 +1,8 @@
+/* font-family: 'Courier New'; - logo */
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@800&display=swap');
+/* font-family: 'Righteous', cursive; - navbar */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 
 :root{
     --bg_purple:rgb(51, 0, 51);
@@ -56,13 +60,15 @@ body{
 aside{
     border-right: 1px solid rgb(46, 46, 46) ;
 }   
-main{
+.content-box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     padding: 1rem;
+    height: 100%;
+    width:100%;
 }
 .note
 { 

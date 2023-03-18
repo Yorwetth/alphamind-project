@@ -1,15 +1,12 @@
 import React from 'react'
-import Logo from './components/pages/Logo'
-import Navbar from './components/pages/Navbar'
-import Note from './components/pages/Note'
-import Todo from './components/pages/Todo'
-import Budget from './components/pages/Budget'
-import Calendar from './components/pages/Calendar'
-import Weather from './components/pages/Weather'
+import Logo from './components/logo/Logo'
+import Navbar from './components/navbar/Navbar'
+import Weather from './components/weather/Weather'
+import Note from './components/pages/Note/Note'
+// import Todo from './components/pages/Todo'
+// import Budget from './components/pages/Budget'
+// import Calendar from './components/pages/Calendar'
 import './style/index.css'
-import './style/navbar.css'
-import './style/logo.css'
-import './style/weather.css'
 
 
 function App() {
@@ -22,12 +19,20 @@ function App() {
         <section className="main-content">
           <aside>
             <Weather/>
+            {/* <Note/> */}
           </aside>
           <main>
-            <Note />
-            <Todo />
-            <Budget />
-            <Calendar />
+            <div className="content-box">
+              <section className="note">Notatnik</section>
+              <section className="todo">Todo</section>
+              <section className="budget">Budżet</section>
+              <section className="calendar">Kalendarz</section>
+            </div>
+            {/* Każda opcja wyłącza content-box oraz Weather */}
+            {/* <Note /> */}
+            {/* <Todo /> */}
+            {/* <Budget /> */}
+            {/* <Calendar />  */}
           </main>
         </section>
       </div>
