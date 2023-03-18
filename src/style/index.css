@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@800&display=swap');
+
+:root{
+    --bg_purple:rgb(51, 0, 51);
+    --bg_blue:rgb(9, 0, 73);
+    --bg_red:rgb(107, 7, 7);
+    --bg_grey:rgba(32,32,46, 1);
+    --main_color:rgb(111, 27, 194);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    width:100vw;
+    height: 100vh;
+    background: 
+    linear-gradient(215deg, var(--bg_purple), rgba(0, 0, 0, 0.4) 75%),
+    linear-gradient(135deg, var(--bg_blue), rgba(0, 0, 0, 0.4) 75%),
+    linear-gradient(360deg, var(--bg_red), rgba(0, 0, 0, 0.4) 75%);
+    color: white;
+    text-align: center;
+}
+#root{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+}
+.content{
+    width:70%;
+    height: 80%;
+    display: grid;
+    background: var(--bg_grey);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 4rem 1px;
+    border-radius:2rem;
+    padding: 0px .5rem;
+    grid-template-rows: [top-panel] 15% [main-content]auto;
+    overflow:hidden;
+}
+.top-panel{
+    display: grid;
+    grid-template-columns: [main-header-container] 25% [site-nav]auto;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(46, 46, 46);
+}
+.main-content{
+    display: grid;
+    grid-template-columns: [aside] 25% [main]auto ;
+    padding: 0.5rem 0;
+}
+aside{
+    border-right: 1px solid rgb(46, 46, 46) ;
+}   
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding: 1rem;
+}
+.note
+{ 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.todo{ 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.budget{ 
+    grid-area: 2 / 1 / 3 / 3; 
+}
+.calendar{ 
+    grid-area: 1 / 3 / 3 / 4; 
+}
+.note,
+.todo,
+.budget,
+.calendar{
+    background: rgba(0,0,0,0.4);
+    padding:10px;
+    border-radius:2rem;
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+}
+.note:hover,
+.todo:hover,
+.budget:hover,
+.calendar:hover{
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+}

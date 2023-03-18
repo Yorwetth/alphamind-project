@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Logo from './components/pages/Logo'
+import Navbar from './components/pages/Navbar'
+import Note from './components/pages/Note'
+import Todo from './components/pages/Todo'
+import Budget from './components/pages/Budget'
+import Calendar from './components/pages/Calendar'
+import Weather from './components/pages/Weather'
+import './style/index.css'
+import './style/navbar.css'
+import './style/logo.css'
+import './style/weather.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="content">
+        <section className="top-panel">
+          <Logo />
+          <Navbar />
+        </section>
+        <section className="main-content">
+          <aside>
+            <Weather/>
+          </aside>
+          <main>
+            <Note />
+            <Todo />
+            <Budget />
+            <Calendar />
+          </main>
+        </section>
+      </div>
   );
 }
 
