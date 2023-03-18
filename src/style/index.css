@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@800&display=swap');
 /* font-family: 'Righteous', cursive; - navbar */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+/* font-family: 'Lobster', cursive; - reszta */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root{
     --bg_purple:rgb(51, 0, 51);
@@ -99,4 +100,7 @@ aside{
 .calendar:hover{
     background: rgba(0,0,0,0.7);
     cursor: pointer;
+}
+.turn-off{
+    display:none;
 }
