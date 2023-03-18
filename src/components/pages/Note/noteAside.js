@@ -9,10 +9,10 @@ export default function Navaside() {
                     Twoje Notatki
                 </h2>
             </header>
-            <div class="note-list-item">
-                <div class="note-titles">test</div>
-                <div class="note-bodys">test test test test test test test testtest test test test</div>
-                <div class="note-dates">Poniedziałek 20.03.2023</div>
+            <div className="note-list-item">
+                <div className="note-titles">test</div>
+                <div className="note-bodys">test test test test test test test testtest test test test</div>
+                <div className="note-dates">Poniedziałek 20.03.2023</div>
             </div>
         </div>
     )
