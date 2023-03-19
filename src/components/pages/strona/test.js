@@ -1,15 +1,16 @@
 import React from 'react'
-import Weather from './weather/Weather'
+import Weather from './Weather'
+import './weather/weather.css'
 
-export default function Main() {
+export default function test() {
     return (
         <section className="main-content">
             <aside>
                 <header className="name-header">
-                    <h2>
-                        Hello Jonathan
-                    </h2>
-                </header>
+                <h2>
+                    Hello Jonathan
+                </h2>
+            </header>
                 <Weather />
             </aside>
             <main>
