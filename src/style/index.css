@@ -101,6 +101,9 @@ aside{
     background: rgba(0,0,0,0.7);
     cursor: pointer;
 }
-.turn-off{
-    display:none;
+.name-header h2{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem;
 }

@@ -4,7 +4,7 @@ import './weather.css'
 
 export default function Weather() {
     return (
-        <div className="weather-container turn-off">
+        <div className="weather-container">
             <div className="weather-icon">
                 {/* <img src={unknown} alt="1"/> */}
             </div>

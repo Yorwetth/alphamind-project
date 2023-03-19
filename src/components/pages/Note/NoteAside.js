@@ -1,7 +1,7 @@
 import React from 'react'
 import './note.css'
 
-export default function Navaside() {
+export default function NoteAside() {
     return (
         <div className="notes-container">
             <header className="notes-header">
