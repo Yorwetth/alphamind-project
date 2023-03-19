@@ -27,6 +27,7 @@ body{
     linear-gradient(360deg, var(--bg_red), rgba(0, 0, 0, 0.4) 75%);
     color: white;
     text-align: center;
+    position: relative;
 }
 #root{
     width:100vw;

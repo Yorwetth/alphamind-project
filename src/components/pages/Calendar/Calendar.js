@@ -1,9 +1,15 @@
 import React from 'react'
+import './calendar.css'
 
 export default function Calendar() {
     return (
-        <div className="calendar-content">
-            Kalendarz
-        </div>
+        <section className="main-content">
+            <aside>
+                
+            </aside>
+            <main>
+                
+            </main>
+        </section>
     )
 }
